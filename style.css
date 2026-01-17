@@ -1,0 +1,140 @@
+body {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTAINER */
+.hero-container {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* BADGE */
+.section-1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: -1px 0px 7px #3ecf8e;
+}
+
+/* TITRE */
+.section-2-title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text-green {
+  color: #3ecf8e;
+}
+
+/* SOUS-TITRE */
+.section-3-subtitle {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #bdbdbd;
+  font-size: 20px;
+}
+
+/* BOUTONS */
+.section-4-btn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Bouton commun */
+.btn-green,
+.btn-outline-green {
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Bouton vert */
+.btn-green {
+  background-color: #3ecf8e;
+  color: #000;
+  font-size: 24px;
+}
+
+.btn-green:hover {
+  background-color: #2fb97a;
+}
+
+/* Bouton outline */
+.btn-outline-green {
+  border: 1px solid #3ecf8e;
+  color: #3ecf8e;
+  font-size: 18px;
+}
+
+.btn-outline-green:hover {
+  background-color: #3ecf8e;
+  color: #000;
+}
+
+.btn-green,
+.btn-outline-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* PTIT CLICK */
+.ptit-click {
+    margin-right: 439px;
+    width: 120px;
+    margin-top: -16px;
+}
+
+
+@media screen and (max-width: 767px) {
+  img.ptit-click {
+    display: none;
+  }
+   
+  .btn-outline-green {
+  font-size: 16px!important;
+  }
+
+  .section-4-btn {
+    flex-direction: column;
+    max-width: 240px;
+    margin: auto;
+  }
+  .section-1 {
+    font-size: 13px!important;
+  }
+
+  .section-2-title {
+    font-size: 22px!important;
+  }
+
+  .section-3-subtitle {
+    font-size: 14px!important;
+  }
+
+  .btn-green {
+    font-size: 18px!important;
+  }
+}
